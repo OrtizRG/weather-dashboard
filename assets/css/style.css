@@ -1,0 +1,67 @@
+.jumbotron {
+    min-width: 585px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 0px 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgb(42, 66, 172);
+    color:cornsilk;
+    font-weight:bolder;
+    border-radius: 0;
+  }
+
+  main {
+    margin: 10px;
+    overflow: hidden;
+    display:contents;
+   
+  }
+
+ .currentWeather {
+     background-color: lightgrey;
+     margin-top: 17px;  
+     margin-bottom: 17px;
+     padding: 1rem;   
+     border: black solid 2px;
+     width: inherit;
+     height:15rem;
+ }
+
+ .forecast {
+     width: 100%;
+     display: inline-flex;
+     padding: 16px 0px;
+     
+
+ }
+
+ .card {
+    display: table-cell;
+    margin-bottom: 10px;
+    background-color: #2778c4;
+    }
+
+.card-body {
+  text-align: left;
+  padding: 0.25rem;
+
+}
+
+.citySearch {
+    font-size: 1.5rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    display::content
+    [class*="row-"] {
+      width: 100%;
+    };
+  
+
+  }
+
+  @import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
