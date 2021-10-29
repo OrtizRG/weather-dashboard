@@ -20,29 +20,32 @@ const searchCity = document.getElementById("searchCity");
 const inputCity = document.getElementById("inputCity");
 
 // //Get Value of Search Bar
-function formSubmit(event) {
-    console.log(event.target);
-    const city = inputCity.value.split(' ').join('_');
+function formSubmit(city) {
+
+    // const city = inputCity.value.split(' ').join('_');
+
+    let apiKey = "appid=1cd225897e08c11da783f6cc763124b0"
+    let weatherApi = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial" + apiKey
+
     console.log(city);
 
-    const weatherApi = "http://api.openweathermap.org/data/2.5/weather?q=sacramento&appid=1cd225897e08c11da783f6cc763124b0";
     
+    
+  
     console.log(weatherApi);
 
-    fetch(weatherApi)
-    .then(function(response) {
-        return response.json();
-    })
-    .then(function(data) {
-        console.log(data);
-    })
+    // fetch(weatherApi)
+    // .then((response) => response.json())
+    // .then((data) => {
+    //         console.log(data);
+    //     });
 
-    fetch("http://api.openweathermap.org/data/2.5/weather?q=sacramento&appid=1cd225897e08c11da783f6cc763124b0")
+    // fetch("http://api.openweathermap.org/data/2.5/weather?q=sacramento&appid=1cd225897e08c11da783f6cc763124b0")
    
 };
 
-searchCity.addEventListener("click", function(event) {
-    formSubmit(event);
+searchCity.addEventListener("click", function(city) {
+    formSubmit(city);
     
 });
 
