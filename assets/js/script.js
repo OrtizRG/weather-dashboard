@@ -1,15 +1,5 @@
-// var getCityData = function() {
-//     fetch("http://api.openweathermap.org/data/2.5/weather?q=sacramento&appid=1cd225897e08c11da783f6cc763124b0");
-// };
-//     var response = fetch("http://api.openweathermap.org/data/2.5/weather?q=sacramento&appid=1cd225897e08c11da783f6cc763124b0")
-//     .then(function(response)
-//     console.log(response)
-// });
-//     console.log("inside", response);
-  
-  
-//   getCityData();
-
+let temp = document.querySelector(".temp")
+let wind = document.querySelector(".wind")
 
 const currentDatetime = document.querySelector("#datetime-current");
 
@@ -22,33 +12,37 @@ const inputCity = document.getElementById("inputCity");
 // //Get Value of Search Bar
 function formSubmit(city) {
 
-    // const city = inputCity.value.split(' ').join('_');
+    const cityName = inputCity.value.split(' ').join('_');
 
-    let apiKey = "appid=1cd225897e08c11da783f6cc763124b0"
-    let weatherApi = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial" + apiKey
+    // var city = inputCity.textContent
 
-    console.log(city);
+    let apiKey = "46375a513237add901abadc6f726acfb"
+    let weatherApi = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=" + apiKey
 
-    
-    
-  
+    console.log(inputCity);
+     
     console.log(weatherApi);
 
-    // fetch(weatherApi)
-    // .then((response) => response.json())
-    // .then((data) => {
-    //         console.log(data);
-    //     });
+    fetch(weatherApi)
+    .then((response) => response.json())
+    .then((data) => {
+            console.log(data);
+            currentDatetime.textContent = cityName.toUpperCase()+" ~ " + currentTime.format("MMM DD, YYYY");
+            temp.textContent = (Math.floor( data.main.temp - 273.15) * 9/5) + 32;
+            wind.textContent = data.wind.speed
+        });
 
-    // fetch("http://api.openweathermap.org/data/2.5/weather?q=sacramento&appid=1cd225897e08c11da783f6cc763124b0")
+    // fetch("https://api.openweathermap.org/data/2.5/weather?q=" + inputCity + "&appid=" + apiKey)
    
-};
+
+    };
+
+
 
 searchCity.addEventListener("click", function(city) {
     formSubmit(city);
+    console.log(city)
     
 });
 
-currentDatetime.textContent = "Sacramento " + currentTime.format("MMM DD, YYYY");
-
-
+// currentDatetime.textContent = inputCity + currentTime.format("MMM DD, YYYY");

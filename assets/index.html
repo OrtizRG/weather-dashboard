@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link
     rel="stylesheet"
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
     <title>Weather Dashboard</title>
 </head>
 <body>
 
     
     <div class= "col-xs-12 float-md-center"> 
-    <header class="jumbotron">
+    <header class="jumbotron float-md-center">
         Weather Dashboard
     </header>
     </div>
@@ -41,18 +41,16 @@
                 <div class="container">
 
                     <div class="currentWeather">
-                <h3 id="datetime-current">Enter a city in the search bar!</h3>
-                    </br>
-                <h6>Temp:<p class="temp"></p>
-                Wind:<p class="wind"></p>
+                <h3 id="datetime-current"></h3>
+                              
+                <p>Temp:</p>
+                <p>Wind:</p>
                 <p>Humidity:</p>
                 <p>UV Index:</p>
-                </h6>
                     </div>
 
 
                     <div class="fivedayForecast">
-                        <h3>5-day Forecast:</h3>
                         <div class="card-deck">
                             <div class="card text-center">
                                 <div class="card-block">
@@ -135,7 +133,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-   
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.all.min.js"></script> -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZVuxiPLG-sksUa2T-mOEHz35pr2hPNpY&callback=initMap"></script> -->
+    
     <script src="assets\js\script.js"></script>
 
 
