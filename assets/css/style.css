@@ -6,11 +6,12 @@
     margin: 0px 0px 0px 0px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background: rgb(42, 66, 172);
     color:cornsilk;
     font-weight:bolder;
     border-radius: 0;
     font-size: -webkit-xxx-large;
+    background-image: linear-gradient(to right, rgba(10, 10, 10, 0.589), rgb(8, 99, 173));
+    
   }
 
   main {
@@ -19,6 +20,10 @@
     display:contents;
    
   }
+   h4 {
+     background-color: cornsilk;
+     padding:10px;     
+   }
 
  .currentWeather {
      background-color: lightgrey;
@@ -30,10 +35,14 @@
      height:fit-content;
  }
 
+ .text-uppercase {
+  text-transform: inherit;
+}
+
  .forecast {
      width: 100%;
      display: inline-flex;
-     padding: 16px 0px;
+     padding: auto 0px;
      
 
  }
@@ -54,22 +63,36 @@
     font-size: 1.5rem;
 }
 
+.card-deck {
+  display:flex;
+}
 
-@media only screen and (max-width: 576px) {
-    /* For mobile phones: */
-    display::content
-    [class*="row-"] {
-      width: 100%;
-    };
-    }
 
   
-@media (max-width: 576px) {
+@media (min-width: 576px){
+.card-deck {
+    -ms-flex-flow: column;
+    flex-flow: column;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+}
+
+@media (max-width: 992px) {
 .card-deck .card {
-  margin-right: auto;
-  margin-bottom: 0;
-  margin-left: auto;
-};
+  display: contents;
+  margin-right: 5px;
+  margin-left: 5px;
+  }
+}
+
+@media (min-width: 993px) {
+  .card-deck .card {
+    display: contents;
+    margin-right: 5px;
+    margin-left: 5px;
+    }
 }
 
   @import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+

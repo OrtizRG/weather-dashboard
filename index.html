@@ -35,84 +35,77 @@
                 </input>
                 <button id="searchCity" class="btn btn-block btn-primary">Search</button>
             </div>
+            <div class="search"></div>
             </div>
 
             <div class="col-lg-9 flex-column">
                 <div class="container">
 
                     <div class="currentWeather">
-                <h3 id="datetime-current">Enter a city in the search bar!</h3>
+                <h4 id="datetime-current">Enter a city in the search bar!</h4>
                     </br>
                 <h6>Temp:<p class="temp"></p>
                 Wind:<p class="wind"></p>
-                <p>Humidity:</p>
-                <p>UV Index:</p>
+                Humidity:<p class="humidity"></p>
+                <p class="uvindex"></p>
+                <div class="col-12 d-flex">
+                    <p id="UV-index"></p>
+                </div>
                 </h6>
                     </div>
-
+                </div>
 
                     <div class="fivedayForecast">
                         <h3>5-day Forecast:</h3>
                         <div class="card-deck">
-                            <div class="card text-center">
-                                <div class="card-block">
-                                    <div class="card-body">
-                                        <h3 id="datetime-current class=card-title"></h3>
-                                        <h6 class="card-subtitle mb-2 text-muted"><img src="https://img.icons8.com/fluency/48/000000/sun.png"/></h6>
-                                        <p class="card-text">Temp: <div id="forecastTemp"></div></p>
-                                        <p class="card-text">Wind: <div id="forecastWind"></div></p>
-                                        <p class="card-text">Humidity: <div id="forecastHumidity"></div></p>
-                                    </div>
-                                </div>
 
-                            </div>
-                    
-                            <div class="card text-center">
-                                <div class="card-block">
-                                    <div class="card-body">
-                                        <h5 class="card-title">9/8/2021</h5>
-                                        <h6 class="card-subtitle mb-2 text-muted"><img src="https://img.icons8.com/fluency/48/000000/sun.png"/></h6>
-                                        <p class="card-text">Temp: <div id="forecastTemp"></div></p>
+                            <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+                                <div class="card-header">11/28/2021</div>
+                                <div class="card-body">
+                                  <h5 class="card-title">Sunday<img src="https://img.icons8.com/fluency/48/000000/sun.png"/></h5>
+                                  <p class="card-text">Temp: <div id="forecastTemp"></div></p>
                                         <p class="card-text">Wind: <div id="forecastWind"></div></p>
                                         <p class="card-text">Humidity: <div id="forecastHumidity"></div></p>
-                                    </div>
                                 </div>
-                            
-                            </div>
-                    
-                            <div class="card text-center">
-                                <div class="card-block">
-                                    <div class="card-body">
-                                        <h5 class="card-title">9/8/2021</h5>
-                                        <h6 class="card-subtitle mb-2 text-muted"><img src="https://img.icons8.com/fluency/48/000000/sun.png"/></h6>
-                                        <p class="card-text">Temp: <div id="forecastTemp"></div></p>
+                              </div>
+
+                              <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+                                <div class="card-header">11/28/2021</div>
+                                <div class="card-body">
+                                  <h5 class="card-title">Sunday<img src="https://img.icons8.com/fluency/48/000000/sun.png"/></h5>
+                                  <p class="card-text">Temp: <div id="forecastTemp"></div></p>
                                         <p class="card-text">Wind: <div id="forecastWind"></div></p>
                                         <p class="card-text">Humidity: <div id="forecastHumidity"></div></p>
-                                    </div>
                                 </div>
-                            </div>
-                            <div class="card text-center">
-                                <div class="card-block">
-                                    <div class="card-body">
-                                        <h5 class="card-title">9/8/2021</h5>
-                                        <h6 class="card-subtitle mb-2 text-muted"><img src="https://img.icons8.com/fluency/48/000000/sun.png"/></h6>
-                                        <p class="card-text">Temp: <div id="forecastTemp"></div></p>
+                              </div>
+                              <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+                                <div class="card-header">11/28/2021</div>
+                                <div class="card-body">
+                                  <h5 class="card-title">Sunday<img src="https://img.icons8.com/fluency/48/000000/sun.png"/></h5>
+                                  <p class="card-text">Temp: <div id="forecastTemp"></div></p>
                                         <p class="card-text">Wind: <div id="forecastWind"></div></p>
                                         <p class="card-text">Humidity: <div id="forecastHumidity"></div></p>
-                                    </div>
                                 </div>
-                            </div>
-                            <div class="card text-center">
-                                <div class="card-block">
-                                    <div class="card-body">
-                                        <h5 class="card-title">9/8/2021</h5>
-                                        <h6 class="card-subtitle mb-2 text-muted"><img src="https://img.icons8.com/fluency/48/000000/sun.png"/></h6>
-                                        <p class="card-text">Temp: <div id="forecastTemp"></div></p>
+                              </div>
+                              <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+                                <div class="card-header">11/28/2021</div>
+                                <div class="card-body">
+                                  <h5 class="card-title">Sunday<img src="https://img.icons8.com/fluency/48/000000/sun.png"/></h5>
+                                  <p class="card-text">Temp: <div id="forecastTemp"></div></p>
                                         <p class="card-text">Wind: <div id="forecastWind"></div></p>
                                         <p class="card-text">Humidity: <div id="forecastHumidity"></div></p>
-                                    </div>
-                            </div>
-                        </div>
+                                </div>
+                              </div>
+                              <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+                                <div class="card-header">11/28/2021</div>
+                                <div class="card-body">
+                                  <h5 class="card-title">Sunday<img src="https://img.icons8.com/fluency/48/000000/sun.png"/></h5>
+                                  <p class="card-text">Temp: <div id="forecastTemp"></div></p>
+                                        <p class="card-text">Wind: <div id="forecastWind"></div></p>
+                                        <p class="card-text">Humidity: <div id="forecastHumidity"></div></p>
+                                </div>
+                              </div>
+
                     </div>
 
                 </div>
@@ -137,6 +130,7 @@
     ></script>
    
     <script src="assets\js\script.js"></script>
+   
 
 
 </body>
